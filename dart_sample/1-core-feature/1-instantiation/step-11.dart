@@ -1,5 +1,6 @@
 class Human {
   static Human _instance;
+
   String name;
   String country;
   int age;

@@ -19,4 +19,8 @@ class Human {
       wifes: ["main wife", "second wife", "real wife"],
     );
   }
+
+  factory Human.NewBord() {
+    return Human("no name", age: 0);
+  }
 }

@@ -1,12 +1,5 @@
-// class Robot {
-//   final double height;
-//   final double weight;
-//   final List<String> names;
+import '2-syntax/10-null-aware.dart';
 
-//   Robot(this.height, this.weight, this.names);
-// }
-
-// main() {
-//   final r = Robot(5, 170, ["Walter"]);
-//   print(r.names..add("Steve")); // [Walter, Steve]
-// }
+main() {
+  sample2();
+}

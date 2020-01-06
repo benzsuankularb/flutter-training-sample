@@ -11,11 +11,11 @@ Review the Dart core syntax and it's syntactic sugar.
 ### 2. flutter_widget_sample (Basic Session)
 Review most used widgets in Flutter.
 
-### 3. flutter_layout_sample (View Session)
+### 3. flutter_layout_sample (View Management Session)
 Sample on layout widgets such as Container, Row, Column, Stack.
 And know deeper about it's hidden behaviours.
 
-### 4. flutter_atomic_sample (View Session)
+### 4. flutter_atomic_sample (View Management Session)
 Sample on how to manage view using atomic design principle.
 
 ### 5. flutter_state_management_sample (State Management Session)

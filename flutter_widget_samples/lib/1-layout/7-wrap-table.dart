@@ -32,6 +32,5 @@ class Sample1_7 extends StatelessWidget {
       ],
     );
 
-    // TODO Table
   }
 }

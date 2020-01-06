@@ -1,16 +1,24 @@
-# flutter_sample
+# Flutter Training Sample Project
 
-A new Flutter project.
+The repo include serveral projects to give examples of Dart language and Flutter.
 
-## Getting Started
+## Projects
 
-This project is a starting point for a Flutter application.
+### 1. dart_syntax_sample (Basic Session)
+    Review the Dart core syntax and it's syntactic sugar.
 
-A few resources to get you started if this is your first Flutter project:
+### 2. flutter_widget_sample (Basic Session)
+    Review most used widgets in Flutter.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### 3. flutter_layout_sample (View Session)
+    Sample on layout widgets such as Container, Row, Column, Stack.
+    And know deeper about it's hidden behaviours.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 4. flutter_atomic_sample (View Session)
+    Sample on how to manage view using atomic design principle.
+
+### 5. flutter_state_management_sample (State Management Session)
+    Review the popular state management styles in Flutter projects.
+
+### 6. flutter_mobx_system_sample (State Management Session)
+    Sample on how to manage state using MobX System.

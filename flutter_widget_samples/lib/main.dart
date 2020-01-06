@@ -1,11 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_samples/1-layout/1-row-column.dart';
-import '1-layout/2-rc-mainAxisAlignment.dart';
-import '1-layout/3-rc-expanded.dart';
-import '1-layout/4-rc-mainAxisSize.dart';
-import '1-layout/5-rc-crossAxisAlignment.dart';
-import '1-layout/6-rc-intrinsic.dart';
-import '2-basic/1-text-image-icon.dart';
 import '2-basic/2-gestureDetector.dart';
 import '6-navigation/3-result.dart';
 
@@ -19,11 +12,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // routes: {
-      //   '/': (context) => FirstScreen(),
-      //   '/second': (context) => SecondScreen(),
-      // },
-      // home: buildRouter(),
       home: buildDefault(),
     );
   }

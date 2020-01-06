@@ -45,12 +45,3 @@ class ItemWithSize extends StatelessWidget {
     );
   }
 }
-
-class EmptyContainer extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: Colors.green,
-    );
-  }
-}

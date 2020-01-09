@@ -5,67 +5,42 @@ import 'package:flutter_layout_workshop/views/atoms/texts/title_text.dart';
 class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.all(Radius.circular(10)),
-      child: Container(
+    return Container(
+      decoration: BoxDecoration(
         color: Colors.white,
-        child: DefaultTabController(
-          length: 2,
-          child: Column(
-            children: [
-              MyTabBar(
-                tabs: [
-                  "AUTO LOAN",
-                  "HIGH PURCHASE",
-                ],
-              ),
-              Placeholder(),
-              // Container(
-              //   child: Column(
-              //     children: [
-              //       // Placeholder(
-              //       //   fallbackHeight: 120,
-              //       // ),
-              //       Container(
-              //         padding: EdgeInsets.all(20),
-              //         child: Column(
-              //           children: [
-              //             Text("Maximum loan amount"),
-              //             Text(
-              //               "THB ${1190000}",
-              //               style: TextStyle(
-              //                 fontSize: 20,
-              //               ),
-              //             ),
-              //             SizedBox(
-              //               height: 15,
-              //             ),
-              //             ClipRRect(
-              //               borderRadius: BorderRadius.all(
-              //                 Radius.circular(4),
-              //               ),
-              //               child: Container(
-              //                 padding: EdgeInsets.all(5),
-              //                 color: Colors.blue,
-              //                 child: Text("Get cash in 24 hours"),
-              //               ),
-              //             )
-              //           ],
-              //         ),
-              //       ),
-              //       Placeholder(
-              //         fallbackHeight: 200,
-              //       ),
-              //     ],
-              //   ),
-              // ),
-              Container(
-                alignment: Alignment.center,
-                color: Colors.yellow,
-                height: 50,
-                child: TitleText("SELECT"),
-              ),
-            ],
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 0,
+            blurRadius: 10,
+            offset: Offset(0, 7), // changes position of shadow
+          ),
+        ],
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+        child: Container(
+          color: Colors.white,
+          child: DefaultTabController(
+            length: 2,
+            child: Column(
+              children: [
+                MyTabBar(
+                  tabs: [
+                    "AUTO LOAN",
+                    "HIGH PURCHASE",
+                  ],
+                ),
+                Placeholder(),
+                Container(
+                  alignment: Alignment.center,
+                  color: Colors.yellow,
+                  height: 50,
+                  child: TitleText("SELECT"),
+                ),
+              ],
+            ),
           ),
         ),
       ),

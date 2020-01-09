@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_layout_workshop/views/atoms/my_tab_bar.dart';
+import 'package:flutter_layout_workshop/views/atoms/texts/title_text.dart';
 
 class ProductCard extends StatelessWidget {
   @override
@@ -62,7 +63,7 @@ class ProductCard extends StatelessWidget {
                 alignment: Alignment.center,
                 color: Colors.yellow,
                 height: 50,
-                child: Text("SELECT"),
+                child: TitleText("SELECT"),
               ),
             ],
           ),

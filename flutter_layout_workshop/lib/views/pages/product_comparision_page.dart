@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_layout_workshop/views/atoms/texts/title_text.dart';
 import 'package:flutter_layout_workshop/views/layouts/product_comparision_page_layout.dart';
 import 'package:flutter_layout_workshop/views/molecules/adjust_request_card.dart';
 import 'package:flutter_layout_workshop/views/molecules/product_card.dart';
@@ -11,7 +12,7 @@ class ProductComparisionPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Loan Calculator"),
+        title: TitleText("Loan Calculator"),
       ),
       body: ProductComparisionPageLayout(
         header: AdjustRequestCard(

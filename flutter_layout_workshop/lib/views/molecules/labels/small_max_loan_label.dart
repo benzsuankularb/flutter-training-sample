@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_layout_workshop/views/atoms/texts/small_text.dart';
 
 class SmallMaxLoadLabel extends StatelessWidget {
   final double amount;
@@ -6,6 +7,6 @@ class SmallMaxLoadLabel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("Max. THB $amount");
+    return SmallText("Max. THB $amount");
   }
 }

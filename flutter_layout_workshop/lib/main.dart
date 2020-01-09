@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layout_workshop/views/pages/product_comparision_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +12,12 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.grey[200],
       ),
-      home: ProductComparisionPage(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Hola"),
+        ),
+        body: Container(),
+      ),
     );
   }
 }

@@ -43,7 +43,7 @@ class _AdjustRequestCardState extends State<AdjustRequestCard> {
           Align(
             alignment: Alignment.topRight,
             child: SmallMaxLoadLabel(
-              amount: value,
+              amount: max,
             ),
           )
         ],

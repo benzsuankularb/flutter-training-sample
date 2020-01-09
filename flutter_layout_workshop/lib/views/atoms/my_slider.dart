@@ -11,6 +11,8 @@ class AtomSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Slider(
+      activeColor: Colors.yellow,
+      inactiveColor: Colors.grey,
       min: min,
       max: max,
       value: value,

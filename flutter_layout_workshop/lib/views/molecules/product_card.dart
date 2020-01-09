@@ -19,6 +19,45 @@ class ProductCard extends StatelessWidget {
                 ],
               ),
               Placeholder(),
+              // Container(
+              //   child: Column(
+              //     children: [
+              //       // Placeholder(
+              //       //   fallbackHeight: 120,
+              //       // ),
+              //       Container(
+              //         padding: EdgeInsets.all(20),
+              //         child: Column(
+              //           children: [
+              //             Text("Maximum loan amount"),
+              //             Text(
+              //               "THB ${1190000}",
+              //               style: TextStyle(
+              //                 fontSize: 20,
+              //               ),
+              //             ),
+              //             SizedBox(
+              //               height: 15,
+              //             ),
+              //             ClipRRect(
+              //               borderRadius: BorderRadius.all(
+              //                 Radius.circular(4),
+              //               ),
+              //               child: Container(
+              //                 padding: EdgeInsets.all(5),
+              //                 color: Colors.blue,
+              //                 child: Text("Get cash in 24 hours"),
+              //               ),
+              //             )
+              //           ],
+              //         ),
+              //       ),
+              //       Placeholder(
+              //         fallbackHeight: 200,
+              //       ),
+              //     ],
+              //   ),
+              // ),
               Container(
                 alignment: Alignment.center,
                 color: Colors.yellow,

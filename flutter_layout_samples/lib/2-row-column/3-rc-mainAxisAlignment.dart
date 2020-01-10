@@ -7,11 +7,12 @@ class Sample2_3 extends StatelessWidget {
     return Container(
       color: Colors.amber,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
+        // mainAxisAlignment: MainAxisAlignment.start,
         // mainAxisAlignment: MainAxisAlignment.end,
         // mainAxisAlignment: MainAxisAlignment.center,
         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
         // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           ItemNoSize(),
           ItemNoSize(),

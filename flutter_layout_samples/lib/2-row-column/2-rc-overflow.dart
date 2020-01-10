@@ -6,20 +6,7 @@ class Sample2_2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.amber,
-      child: Row(
-        children: [
-          ItemNoSize(),
-          ItemNoSize(),
-          ItemNoSize(),
-          ItemNoSize(),
-          ItemNoSize(),
-          ItemNoSize(),
-          ItemNoSize(),
-        ],
-      ),
-
-      // child: Wrap(
-      //   direction: Axis.horizontal,
+      // child: Row(
       //   children: [
       //     ItemNoSize(),
       //     ItemNoSize(),
@@ -30,6 +17,19 @@ class Sample2_2 extends StatelessWidget {
       //     ItemNoSize(),
       //   ],
       // ),
+
+      child: Wrap(
+        direction: Axis.horizontal,
+        children: [
+          ItemNoSize(),
+          ItemNoSize(),
+          ItemNoSize(),
+          ItemNoSize(),
+          ItemNoSize(),
+          ItemNoSize(),
+          ItemNoSize(),
+        ],
+      ),
     );
   }
 }

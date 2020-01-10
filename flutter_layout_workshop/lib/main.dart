@@ -58,18 +58,28 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      child: Column(
-                        children: [
-                          Placeholder(
-                            fallbackHeight: 50,
-                          ),
-                          Placeholder(
-                            fallbackHeight: 300,
-                          ),
-                          Placeholder(
-                            fallbackHeight: 50,
-                          ),
-                        ],
+                      color: Colors.white,
+                      child: DefaultTabController(
+                        length: 2,
+                        child: Column(
+                          children: [
+                            TabBar(
+                              tabs: [
+                                Tab(text: "AUTO LOAN"),
+                                Tab(text: "HIRE PURCHASE"),
+                              ],
+                            ),
+                            Placeholder(
+                              fallbackHeight: 300,
+                            ),
+                            Container(
+                              padding: EdgeInsets.symmetric(vertical: 20),
+                              alignment: Alignment.center,
+                              color: Colors.yellow,
+                              child: Text("SELECT"),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ],

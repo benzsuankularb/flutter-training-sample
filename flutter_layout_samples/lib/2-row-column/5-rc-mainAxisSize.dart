@@ -7,8 +7,8 @@ class Sample2_5 extends StatelessWidget {
     return Container(
       color: Colors.amber,
       child: Row(
-        // mainAxisSize: MainAxisSize.max,
         mainAxisSize: MainAxisSize.min,
+        // mainAxisSize: MainAxisSize.max,
         children: [
           ItemNoSize(),
           ItemNoSize(),

@@ -7,11 +7,11 @@ class Sample2_6 extends StatelessWidget {
     return Container(
       color: Colors.amber,
       child: Row(
-        // children: [
-        //   ItemNoSize(),
-        //   ItemNoSize(),
-        //   ItemNoSize(),
-        // ],
+        children: [
+          ItemNoSize(),
+          ItemNoSize(),
+          ItemNoSize(),
+        ],
 
         // children: [
         //   ItemNoSize(),
@@ -21,11 +21,11 @@ class Sample2_6 extends StatelessWidget {
         //   ),
         // ],
 
-        children: [
-          Expanded(flex: 1, child: ItemNoSize()),
-          Expanded(flex: 3, child: ItemNoSize()),
-          Expanded(flex: 2, child: ItemNoSize()),
-        ],
+        // children: [
+        //   Expanded(flex: 1, child: ItemNoSize()),
+        //   Expanded(flex: 3, child: ItemNoSize()),
+        //   Expanded(flex: 2, child: ItemNoSize()),
+        // ],
       ),
     );
   }

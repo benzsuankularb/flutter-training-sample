@@ -39,6 +39,32 @@ class Sample2_7 extends StatelessWidget {
         //     alignment: Alignment.center,
         //   ),
         // ],
+
+        // children: [
+        //   ItemNoSize(),
+        //   ItemNoSize(),
+        //   Expanded(
+        //     child: Container(
+        //       color: Colors.purple,
+        //       child: ItemNoSize(),
+        //       alignment: Alignment.center,
+        //     ),
+        //   ),
+        // ],
+
+        // children: [
+        //   ItemNoSize(),
+        //   ItemNoSize(),
+        //   Expanded(
+        //     child: IntrinsicHeight(
+        //       child: Container(
+        //         color: Colors.purple,
+        //         child: ItemNoSize(),
+        //         alignment: Alignment.center,
+        //       ),
+        //     ),
+        //   ),
+        // ],
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_layout_workshop/views/modules/labels/request_amount_label.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,11 +24,8 @@ class MyApp extends StatelessWidget {
               Container(
                 child: Column(
                   children: [
-                    Text(
-                      "I need THB 1900000",
-                      style: TextStyle(
-                        fontSize: 23,
-                      ),
+                    RequestAmountLabel(
+                      amount: 1190000,
                     ),
                     Slider(
                       onChanged: (v) => {},
@@ -57,28 +55,31 @@ class MyApp extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Container(
-                      color: Colors.white,
-                      child: DefaultTabController(
-                        length: 2,
-                        child: Column(
-                          children: [
-                            TabBar(
-                              tabs: [
-                                Tab(text: "AUTO LOAN"),
-                                Tab(text: "HIRE PURCHASE"),
-                              ],
-                            ),
-                            Placeholder(
-                              fallbackHeight: 300,
-                            ),
-                            Container(
-                              padding: EdgeInsets.symmetric(vertical: 20),
-                              alignment: Alignment.center,
-                              color: Colors.yellow,
-                              child: Text("SELECT"),
-                            ),
-                          ],
+                    ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      child: Container(
+                        color: Colors.white,
+                        child: DefaultTabController(
+                          length: 2,
+                          child: Column(
+                            children: [
+                              TabBar(
+                                tabs: [
+                                  Tab(text: "AUTO LOAN"),
+                                  Tab(text: "HIRE PURCHASE"),
+                                ],
+                              ),
+                              Placeholder(
+                                fallbackHeight: 300,
+                              ),
+                              Container(
+                                padding: EdgeInsets.symmetric(vertical: 20),
+                                alignment: Alignment.center,
+                                color: Colors.yellow,
+                                child: Text("SELECT"),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),

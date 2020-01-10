@@ -50,9 +50,28 @@ class MyApp extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.symmetric(vertical: 20),
                       alignment: Alignment.topLeft,
-                      child: Text("+ COMPARE LOANS"),
+                      child: Text(
+                        "+ COMPARE LOANS",
+                        style: TextStyle(
+                          color: Colors.blue,
+                        ),
+                      ),
                     ),
-                    Placeholder(),
+                    Container(
+                      child: Column(
+                        children: [
+                          Placeholder(
+                            fallbackHeight: 50,
+                          ),
+                          Placeholder(
+                            fallbackHeight: 300,
+                          ),
+                          Placeholder(
+                            fallbackHeight: 50,
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),

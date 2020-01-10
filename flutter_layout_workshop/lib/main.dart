@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_layout_workshop/views/atoms/my_slider.dart';
 import 'package:flutter_layout_workshop/views/modules/labels/request_amount_label.dart';
 
 void main() => runApp(MyApp());
@@ -27,13 +28,11 @@ class MyApp extends StatelessWidget {
                     RequestAmountLabel(
                       amount: 1190000,
                     ),
-                    Slider(
+                    MySlider(
                       onChanged: (v) => {},
                       value: 0,
                       min: 0,
                       max: 1000,
-                      activeColor: Colors.yellow,
-                      inactiveColor: Colors.grey,
                     ),
                     Align(
                       alignment: Alignment.centerRight,

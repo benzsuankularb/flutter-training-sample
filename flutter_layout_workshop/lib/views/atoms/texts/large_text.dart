@@ -11,6 +11,5 @@ class LargeText extends StatelessWidget {
         fontSize: 23,
       ),
     );
-    ;
   }
 }

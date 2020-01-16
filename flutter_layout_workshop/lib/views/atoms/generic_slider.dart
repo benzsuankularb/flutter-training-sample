@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 
-class MySlider extends StatelessWidget {
+class GenericSlider extends StatelessWidget {
   final double value;
   final double min;
   final double max;
   final Function(double) onChanged;
 
-  MySlider({
+  GenericSlider({
     this.onChanged,
     this.value,
     this.min,
     this.max,
   });
+
   @override
   Widget build(BuildContext context) {
+    TextEditingController();
     return Slider(
       onChanged: onChanged,
       value: value,

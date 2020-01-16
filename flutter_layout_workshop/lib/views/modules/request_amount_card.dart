@@ -1,30 +1,50 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layout_workshop/views/atoms/my_slider.dart';
+import 'package:flutter_layout_workshop/views/atoms/generic_slider.dart';
+import 'package:flutter_layout_workshop/views/modules/labels/request_amount_label.dart';
+import 'package:flutter_layout_workshop/views/modules/labels/small_max_amount_label.dart';
 
-import 'labels/request_amount_label.dart';
-import 'labels/small_max_amount_label.dart';
-
-class RequestAmountCard extends StatelessWidget {
+class RequestAmountCard extends StatefulWidget {
   final double value;
   final double max;
-  RequestAmountCard({this.value, this.max});
+  final Function(double) onChanged;
+  RequestAmountCard({
+    this.value,
+    this.max,
+    this.onChanged,
+  });
+
+  @override
+  _RequestAmountCardState createState() =>
+      _RequestAmountCardState(value: value);
+}
+
+class _RequestAmountCardState extends State<RequestAmountCard> {
+  double value;
+
+  _RequestAmountCardState({this.value});
+
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Column(
         children: [
           RequestAmountLabel(
-            amount: value,
+            amount: widget.value,
           ),
-          MySlider(
-            onChanged: (v) => {},
+          GenericSlider(
+            onChanged: (v) {
+              setState(() {
+                value = v;
+              });
+              widget.onChanged?.call(v);
+            },
             min: 0,
             value: value,
-            max: max,
+            max: widget.max,
           ),
           Align(
             alignment: Alignment.centerRight,
-            child: SmallMaxAmountLabel(amount: max),
+            child: SmallMaxAmountLabel(amount: widget.max),
           ),
         ],
       ),

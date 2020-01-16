@@ -8,7 +8,7 @@ class SmallText extends StatelessWidget {
     return Text(
       text,
       style: TextStyle(
-        fontSize: 10,
+        fontSize: 15,
       ),
     );
   }

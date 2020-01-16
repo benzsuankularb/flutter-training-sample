@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layout_workshop/views/modules/product_comparision_card.dart';
-import 'package:flutter_layout_workshop/views/modules/request_amount_card.dart';
-import 'package:flutter_layout_workshop/views/organisms/request_amount_model.dart';
 import 'package:flutter_layout_workshop/views/pages/product_selection_page.dart';
 
 void main() => runApp(MyApp());

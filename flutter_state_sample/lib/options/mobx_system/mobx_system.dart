@@ -1,0 +1,51 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:provider/provider.dart';
+
+import 'counter/counter.dart';
+
+class MobXSystemAppSetup extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MobXSystemScaffold(),
+    );
+  }
+}
+
+class MobXSystemScaffold extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final counter = Provider.of<Counter>(context);
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("MOBX SYSTEM"),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'You have pushed the button this many times:',
+            ),
+            Observer(
+              builder: (_) => Text(
+                '${counter.count}',
+                style: const TextStyle(fontSize: 20),
+              ),
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => counter.increase(),
+        tooltip: 'Increment',
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}

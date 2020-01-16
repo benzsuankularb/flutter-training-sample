@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layout_workshop/views/modules/product_comparision_card.dart';
-import 'package:flutter_layout_workshop/views/organisms/request_amount_model.dart';
+import 'package:flutter_layout_workshop/views/organisms/loan_summary_organism.dart';
+import 'package:flutter_layout_workshop/views/organisms/request_amount_organism.dart';
 
 class ProductSelectionPage extends StatelessWidget {
   @override
@@ -13,8 +13,8 @@ class ProductSelectionPage extends StatelessWidget {
         padding: EdgeInsets.all(20),
         child: Column(
           children: [
-            RequestAmountModel(),
-            ProductComparisionCard(),
+            RequestAmountOrganism(),
+            LoanSummaryOrganism(),
           ],
         ),
       ),

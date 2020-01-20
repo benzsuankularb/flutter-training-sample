@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layout_workshop/views/atoms/generic_devider.dart';
-import 'package:flutter_layout_workshop/views/atoms/texts/clickable_text.dart';
-import 'package:flutter_layout_workshop/views/modules/labels/amount_label.dart';
-import 'package:flutter_layout_workshop/views/modules/labels/loan_pending_duration_label.dart';
-import 'package:flutter_layout_workshop/views/modules/period_payment_card.dart';
+import 'package:mobile/views/atoms/generic_devider.dart';
+import 'package:mobile/views/atoms/texts/clickable_text.dart';
+import 'package:mobile/views/modules/labels/amount_label.dart';
+import 'package:mobile/views/modules/labels/loan_pending_duration_label.dart';
+import 'package:mobile/views/modules/period_payment_card.dart';
 
 class LoanSummaryContent extends StatelessWidget {
   const LoanSummaryContent({

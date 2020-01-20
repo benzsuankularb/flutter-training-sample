@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layout_workshop/views/atoms/texts/large_text.dart';
+import 'package:mobile/views/atoms/texts/large_text.dart';
 
 class RequestAmountLabel extends StatelessWidget {
   final double amount;

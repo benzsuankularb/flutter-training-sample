@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layout_workshop/views/atoms/texts/small_text.dart';
+import 'package:mobile/views/atoms/texts/small_text.dart';
 
 class AmountLabel extends StatelessWidget {
   final String title;

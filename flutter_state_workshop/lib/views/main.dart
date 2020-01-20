@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layout_workshop/views/pages/product_selection_page.dart';
+import 'package:mobile/views/pages/product_selection_page.dart';
 
 class MainApp extends StatelessWidget {
   @override

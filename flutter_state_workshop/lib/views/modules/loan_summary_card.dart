@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layout_workshop/views/atoms/generic_card.dart';
-import 'package:flutter_layout_workshop/views/atoms/generic_tab_bar.dart';
+import 'package:mobile/views/atoms/generic_card.dart';
+import 'package:mobile/views/atoms/generic_tab_bar.dart';
 
 class LoanSummaryCard extends StatelessWidget {
   final Function onSelect;

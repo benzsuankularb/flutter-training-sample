@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layout_workshop/views/modules/request_amount_card.dart';
+import 'package:mobile/views/modules/request_amount_card.dart';
 
 class RequestAmountOrganism extends StatelessWidget {
   @override

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layout_workshop/views/modules/loan_summary_content.dart';
+import 'package:mobile/views/modules/loan_summary_content.dart';
 
 class LoanSummaryContentOrganism extends StatelessWidget {
   @override

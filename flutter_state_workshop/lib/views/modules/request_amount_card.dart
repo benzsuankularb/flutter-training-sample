@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layout_workshop/views/atoms/generic_slider.dart';
-import 'package:flutter_layout_workshop/views/modules/labels/request_amount_label.dart';
-import 'package:flutter_layout_workshop/views/modules/labels/small_max_amount_label.dart';
+import 'package:mobile/views/atoms/generic_slider.dart';
+import 'package:mobile/views/modules/labels/request_amount_label.dart';
+import 'package:mobile/views/modules/labels/small_max_amount_label.dart';
 
 class RequestAmountCard extends StatefulWidget {
   final double value;

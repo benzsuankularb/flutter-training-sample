@@ -6,22 +6,36 @@ import 'package:flutter_layout_workshop/views/modules/labels/small_max_amount_la
 class RequestAmountCard extends StatefulWidget {
   final double value;
   final double max;
-  final Function(double) onChanged;
+  final Function(double) onValueChanged;
   RequestAmountCard({
     this.value,
     this.max,
-    this.onChanged,
+    this.onValueChanged,
   });
 
   @override
-  _RequestAmountCardState createState() =>
-      _RequestAmountCardState(value: value);
+  _RequestAmountCardState createState() => _RequestAmountCardState();
 }
 
 class _RequestAmountCardState extends State<RequestAmountCard> {
-  double value;
+  double perciseValue;
 
-  _RequestAmountCardState({this.value});
+  @override
+  void initState() {
+    super.initState();
+    setState(() {
+      perciseValue = widget.value;
+      print("SETTED $perciseValue");
+    });
+  }
+
+  @override
+  void didUpdateWidget(RequestAmountCard oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    setState(() {
+      perciseValue = widget.value;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -29,18 +43,16 @@ class _RequestAmountCardState extends State<RequestAmountCard> {
       child: Column(
         children: [
           RequestAmountLabel(
-            amount: widget.value,
+            amount: perciseValue,
           ),
           GenericSlider(
-            onChanged: (v) {
-              setState(() {
-                value = v;
-              });
-              widget.onChanged?.call(v);
-            },
+            onDoneChanged: widget.onValueChanged,
+            onChanged: (v) => setState(() {
+              perciseValue = v;
+            }),
             min: 0,
-            value: value,
             max: widget.max,
+            value: perciseValue,
           ),
           Align(
             alignment: Alignment.centerRight,

@@ -1,21 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_layout_workshop/views/modules/request_amount_card.dart';
 
-class RequestAmountOrganism extends StatefulWidget {
-  @override
-  _RequestAmountOrganismState createState() => _RequestAmountOrganismState();
-}
-
-class _RequestAmountOrganismState extends State<RequestAmountOrganism> {
-  // double value = 50;
-
+class RequestAmountOrganism extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // Connect to the store.
+    // TODO Connect to the store
     return RequestAmountCard(
-      value: 1000,
-      max: 1190000,
-      onChanged: (value) => {},
+      value: 500,
+      max: 1000,
+      onValueChanged: (value) => {},
     );
   }
 }

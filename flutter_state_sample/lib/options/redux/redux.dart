@@ -14,7 +14,7 @@ class ReduxAppSetup extends StatelessWidget {
   final store = Store<CounterState>(
     counterReducer,
     initialState: CounterState(),
-    middleware: <Middleware<CounterState>>[
+    middleware: [
       middleware.listen,
     ],
   );
@@ -62,7 +62,7 @@ class ReduxWidget extends StatelessWidget {
       ),
       floatingActionButton: StoreConnector<CounterState, VoidCallback>(
         converter: (store) {
-          return () => store.dispatch(Increase);
+          return () => store.dispatch(Increase());
         },
         builder: (_, call) => FloatingActionButton(
           onPressed: call,

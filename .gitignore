@@ -19,3 +19,6 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore

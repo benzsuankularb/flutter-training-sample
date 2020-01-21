@@ -25,7 +25,6 @@ class _RequestAmountCardState extends State<RequestAmountCard> {
     super.initState();
     setState(() {
       perciseValue = widget.value;
-      print("SETTED $perciseValue");
     });
   }
 

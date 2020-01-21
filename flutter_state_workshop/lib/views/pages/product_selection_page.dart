@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mobile/views/atoms/generic_slider.dart';
 import 'package:mobile/views/organisms/loan_summary_organism.dart';
 import 'package:mobile/views/organisms/request_amount_organism.dart';
 

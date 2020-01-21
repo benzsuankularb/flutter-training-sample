@@ -27,7 +27,6 @@ class _GenericSliderState extends State<GenericSlider> {
     super.initState();
     setState(() {
       _value = widget.value;
-      print("SSSSSET $_value");
     });
   }
 

@@ -18,11 +18,11 @@ class CounterBloc extends Bloc<CounterEvent, CounterState> {
   Stream<CounterState> mapEventToState(
     CounterEvent event,
   ) async* {
-    if (event is Increased) {
+    if (event == CounterEvent.increase) {
       yield CounterState(count: state.count + 1);
     }
 
-    if (event is RandomIncreased) {
+    if (event == CounterEvent.randomIncrease) {
       yield CounterState(
         count: state.count,
         loading: true,
@@ -34,7 +34,7 @@ class CounterBloc extends Bloc<CounterEvent, CounterState> {
       );
     }
 
-    if (event is Decreased) {
+    if (event == CounterEvent.decrease) {
       yield CounterState(count: state.count - 1);
     }
   }

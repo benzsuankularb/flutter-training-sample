@@ -12,7 +12,9 @@ class BlocAppSetup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider<CounterBloc>(
-      create: (_) => bloc,
+      create: (_) => CounterBloc(
+        counterService: CountService(),
+      ),
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
@@ -31,7 +33,6 @@ class BlocAppSetup extends StatelessWidget {
 class BlocWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final CounterBloc counterBloc = BlocProvider.of<CounterBloc>(context);
     return Scaffold(
       appBar: AppBar(
         title: Text("BLOC"),
@@ -43,8 +44,7 @@ class BlocWidget extends StatelessWidget {
             Text(
               'You have pushed the button this many times:',
             ),
-            BlocConsumer<CounterBloc, CounterState>(
-              listener: (context, state) {},
+            BlocBuilder<CounterBloc, CounterState>(
               builder: (context, state) {
                 return Text(
                   "${state.count}",
@@ -56,7 +56,8 @@ class BlocWidget extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => counterBloc.add(Increased()),
+        onPressed: () =>
+            BlocProvider.of<CounterBloc>(context).add(CounterEvent.increase),
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),

@@ -12,6 +12,7 @@ class LoanSummaryContentOrganism extends StatelessWidget {
       onPeriodOptionChange: (option) => {},
       periodOptions: [1, 2, 3, 4, 5],
       activePeriodOption: 2,
+      onSelect: () => {},
     );
   }
 }

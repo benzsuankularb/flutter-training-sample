@@ -39,6 +39,7 @@ class _RequestAmountCardState extends State<RequestAmountCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.symmetric(vertical: 20),
       child: Column(
         children: [
           RequestAmountLabel(

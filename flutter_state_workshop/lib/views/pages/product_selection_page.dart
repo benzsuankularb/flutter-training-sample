@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile/views/organisms/loan_summary_organism.dart';
+import 'package:mobile/views/organisms/loan_summart_content_organism.dart';
 import 'package:mobile/views/organisms/request_amount_organism.dart';
 
 class ProductSelectionPage extends StatelessWidget {
@@ -14,7 +14,7 @@ class ProductSelectionPage extends StatelessWidget {
         child: Column(
           children: [
             RequestAmountOrganism(),
-            LoanSummaryOrganism(),
+            LoanSummaryContentOrganism(),
           ],
         ),
       ),

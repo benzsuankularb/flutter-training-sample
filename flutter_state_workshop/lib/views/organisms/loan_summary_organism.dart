@@ -6,6 +6,7 @@ import 'loan_summart_content_organism.dart';
 class LoanSummaryOrganism extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // TODO Connect to the store
     return Container(
       child: Column(
         children: [

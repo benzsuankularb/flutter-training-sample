@@ -4,7 +4,7 @@ import 'package:mobile/views/modules/loan_summary_content.dart';
 class LoanSummaryContentOrganism extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO Connect to store
+    // TODO Connect to the store
     return LoanSummaryContent(
       duration: Duration.zero,
       max: 10000,
